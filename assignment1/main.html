@@ -1,22 +1,22 @@
 <body>
-   {{>header}}
-   {{>nicknameForm}}
-   {{>messageList}}
-   {{>messageForm}}
+   {{ > header }}
+   {{ > nicknameForm }}
+   {{ > messageList }}
+   {{ > messageForm }}
 </body>
 
 <template name="header">
-   <h1>Welcome to M-Instant {{nickname}}</h1>
+   <h1>Welcome to M-Instant {{ nickname }}</h1>
 </template>
 
 <template name="messageList">
-   {{#each messages}}
-      {{>messageItem}}
-   {{/each}}
+   {{ #each messages }}
+      {{ > messageItem }}
+   {{ /each }}
 </template>
 
 <template name="messageItem">
-   <h3>{{nickname}} - {{messageText}}</h3>
+   <h3>{{ nickname }} - {{ messageText }}</h3>
 </template>
 
 <template name="nicknameForm">
